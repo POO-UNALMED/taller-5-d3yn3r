@@ -10,9 +10,9 @@ public class Anfibio extends Animal {
 	int salamandras;
 	String colorPiel;
 	boolean venenoso;
-	public Anfibio(String nom,int ed, String hab, String gen,String col,boolean ven){
-		super(nom,ed,hab,gen);
-		colorPiel = col; venenoso=ven;
+	public Anfibio(String nomb,int edd, String habit, String gene,String colo,boolean venen){
+		super(nomb,edd,habit,gene);
+		colorPiel = colo; venenoso=venen;
 		listado.add(this);
 	}
 	public Anfibio() {
@@ -24,11 +24,11 @@ public class Anfibio extends Animal {
 	public String movimiento() {
 		return "saltar";
 	}
-	public  Anfibio crearRana(String nom, int ed, String gen) {
+	public  Anfibio crearRana(String nomb, int edd, String gene) {
 		ranas ++;
-		return new Anfibio(nom, ed, "selva", gen, "rojo", true);
+		return new Anfibio(nomb, edd, "selva", gene, "rojo", true);
 	}
-	public  Anfibio crearSalamandra(String nom, int ed, String gen) {
+	public  Anfibio crearSalamandra(String nomb, int ed, String gen) {
 		salamandras ++;
 		return new Anfibio(nom, ed, "selva", gen, "negro y amarillo", false);
 	}
