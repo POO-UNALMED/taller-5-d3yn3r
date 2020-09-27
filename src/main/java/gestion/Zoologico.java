@@ -4,7 +4,7 @@ import java.util.*;
 
 
 
-public class Zoologico animal {
+public class Zoologico {
 
 	String ubicacion;
 	String nombre;

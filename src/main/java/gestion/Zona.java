@@ -34,7 +34,7 @@ public class Zona {
 	public Zoologico getZoo() {
 		return zo;
 	}
-	public Zoologico setZoo(Zoologico zoo) {
+	public void setZoo(Zoologico zoo) {
 		this.zo = zoo;
 	}
 	public List<Animal> getAnimal(){
