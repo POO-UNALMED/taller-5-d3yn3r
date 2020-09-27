@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Ave extends Animal {
 		private static List<Ave> listado = new ArrayList<Ave>();
-		static int halcones;
-		static int aguilas;
-		String colorPlumas;
+		public static int halcones;
+		public static int aguilas;
+		private String colorPlumas;
 		public Ave(String nomb,int edd, String habit, String gene, String colo){
 			super(nomb,edd,habit,gene);
 			colorPlumas = colo;

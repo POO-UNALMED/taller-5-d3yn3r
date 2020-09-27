@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Anfibio extends Animal {
 	private static List<Anfibio> listado= new ArrayList<Anfibio>();
-	static int ranas;
-	static int salamandras;
+	public static int ranas;
+	public static int salamandras;
 	String colorPiel;
 	boolean venenoso;
 	public Anfibio(String nomb,int edd, String habit, String gene,String colo,boolean venen){
@@ -24,11 +24,11 @@ public class Anfibio extends Animal {
 	public String movimiento() {
 		return "saltar";
 	}
-	public  Anfibio crearRana(String nomb, int edd, String gene) {
+	public static Anfibio crearRana(String nomb, int edd, String gene) {
 		ranas ++;
 		return new Anfibio(nomb, edd, "selva", gene, "rojo", true);
 	}
-	public  Anfibio crearSalamandra(String nomb, int ed, String gen) {
+	public static  Anfibio crearSalamandra(String nomb, int ed, String gen) {
 		salamandras ++;
 		return new Anfibio(nomb, ed, "selva", gen, "negro y amarillo", false);
 	}
