@@ -6,8 +6,8 @@ import java.util.*;
 
 public class Zoologico {
 
-	String ubicacion;
-	String nombre;
+	private String ubicacion;
+	private String nombre;
 	private List<Zona> zona= new ArrayList<Zona>();
 	public Zoologico(String ubica, String nomb){
 		this.nombre=nomb;
@@ -24,8 +24,8 @@ public class Zoologico {
 	public int cantidadTotalAnimales() {
 		int cant=0;
 		for(int i=0; i< zona.size();i++) {
-			Zona obte= zona.get(i);
-			cant += obte.cantidadAnimales();
+			Zona obten= zona.get(i);
+			cant += obten.cantidadAnimales();
 		}
 		return cant;
 	}
