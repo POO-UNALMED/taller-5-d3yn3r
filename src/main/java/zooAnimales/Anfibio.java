@@ -5,44 +5,44 @@ import java.util.List;
 
 
 public class Anfibio extends Animal {
-	private static List<Anfibio> lista= new ArrayList<Anfibio>();
-	public static int salamandras;
-	public static int ranas;
-	private String colPiel;
-	private boolean venenoso;
+	private static List<Anfibio> listado= new ArrayList<Anfibio>();
+	int ranas;
+	int salamandras;
+	String colorPiel;
+	boolean venenoso;
 	public Anfibio(String nom,int ed, String hab, String gen,String col,boolean ven){
 		super(nom,ed,hab,gen);
-		colPiel = col; venenoso=ven;
-		lista.add(this);
+		colorPiel = col; venenoso=ven;
+		listado.add(this);
 	}
 	public Anfibio() {
-		lista.add(this);
+		listado.add(this);
 	}
-	public static int cantidadAnfibios() {
-		return lista.size();
+	public int cantidadAnfibios() {
+		return listado.size();
 	}
 	public String movimiento() {
 		return "saltar";
 	}
-	public static Anfibio crearRana(String nom, int ed, String gen) {
+	public  Anfibio crearRana(String nom, int ed, String gen) {
 		ranas ++;
 		return new Anfibio(nom, ed, "selva", gen, "rojo", true);
 	}
-	public static Anfibio crearSalamandra(String nom, int ed, String gen) {
+	public  Anfibio crearSalamandra(String nom, int ed, String gen) {
 		salamandras ++;
 		return new Anfibio(nom, ed, "selva", gen, "negro y amarillo", false);
 	}
-	public static List<Anfibio> getListado() {
-		return lista;
+	public  List<Anfibio> getListado() {
+		return listado;
 	}
 	public static void setListado(List<Anfibio> listado) {
-		Anfibio.lista = listado;
+		Anfibio.listado = listado;
 	}
 	public String getColorPiel() {
-		return colPiel;
+		return colorPiel;
 	}
 	public void setColorPiel(String colorPiel) {
-		this.colPiel = colorPiel;
+		this.colorPiel = colorPiel;
 	}
 	public boolean isVenenoso() {
 		return venenoso;

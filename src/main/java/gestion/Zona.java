@@ -3,7 +3,7 @@ import zooAnimales.*;
 import java.util.*;
 
 public class Zona {
-	List<Animales> animal = new ArrayList<Animales>();
+	List<Animal> animal = new ArrayList<Animal>();
 	
 	String nombre;
 	Zoologico zo;
@@ -37,10 +37,10 @@ public class Zona {
 	public Zoologico setZoo(Zoologico zoo) {
 		this.zo = zoo;
 	}
-	public List<Animales> getAnimal(){
+	public List<Animal> getAnimal(){
 		return animal;
 	}
-	public void setAnimales (List<Animales> animal){
+	public void setAnimales (List<Animal> animal){
 		this.animal = animal;
 	}
 	
