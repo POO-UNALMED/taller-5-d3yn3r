@@ -5,21 +5,20 @@ import java.util.*;
 public class Zona {
 	List<Animal> animal = new ArrayList<Animal>();
 	
-	String nombre;
-	Zoologico zo;
+	private String nombre;
+	private Zoologico zo;
 	
-	public Zona(String nombre, Zoologico zo) {
-		this.nombre = nombre;
-		this.zo = zo;
+	public Zona(String nomb, Zoologico zoo) {
+		nombre = nomb;
+		zo = zoo;
 	}
 	
 	public Zona() {
 		
 	}
-	
-	public void addAnimal(Animal anim) {
-		animal.add(anim);
-		
+	public void agregarAnimales(Animal ani) {
+		animal.add(ani);
+		ani.setZona(this);
 	}
 	
 	public int cantidadAnimales() {
