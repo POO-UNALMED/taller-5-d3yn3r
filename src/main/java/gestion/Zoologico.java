@@ -2,30 +2,24 @@ package gestion;
 
 import java.util.*;
 
-
-
 public class Zoologico {
-
-	private String ubicacion;
 	private String nombre;
+	private String ubicacion;
 	private List<Zona> zona= new ArrayList<Zona>();
-	public Zoologico(String ubica, String nomb){
-		this.nombre=nomb;
-		this.ubicacion=ubica;
+	public Zoologico(String nomb, String ubic){
+		nombre = nomb;
+		ubicacion = ubic;
 	}
-	
-	public Zoologico() {
-		
+	public Zoologico(){		
 	}
-	public void agregarZonas(Zona zon) {
-		zona.add(zon);
+	public void agregarZonas(Zona zone) {
+		zona.add(zone);
 	}
-	
 	public int cantidadTotalAnimales() {
 		int cant=0;
 		for(int i=0; i< zona.size();i++) {
-			Zona obten= zona.get(i);
-			cant += obten.cantidadAnimales();
+			Zona pr= zona.get(i);
+			cant += pr.cantidadAnimales();
 		}
 		return cant;
 	}
@@ -47,5 +41,4 @@ public class Zoologico {
 	public void setZona(List<Zona> zonas) {
 		this.zona = zonas;
 	}
-
 }
