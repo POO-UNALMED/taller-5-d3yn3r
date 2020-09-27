@@ -17,4 +17,14 @@ public class Ave extends Animal {
 		public Ave(){
 			listado.add(this);
 		}
+		public static int cantidadaves() {
+			return listado.size();
+		}
+		public String movimiento() {
+			return "volar";
+		}
+		public static Ave crearhalcon(String nomb, int edd, String gene) {
+			halcones ++;
+			return new Ave(nomb, edd, "montañas", gene, "cafe glorioso");
+		}
 }
